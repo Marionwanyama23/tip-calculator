@@ -31,7 +31,7 @@ const calculateBill = () => {
 
   // get bill from user input & convert it into a number 
     let bill = Number(billInput.value)
-    console.log(bill)
+    
   // get the tip from user & convert it into a percentage (divide by 100)
     let tipPercentage = Number(tipInput.value) / 100
   // get the total tip amount
