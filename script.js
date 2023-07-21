@@ -31,16 +31,17 @@ const calculateBill = () => {
 
   // get bill from user input & convert it into a number 
     let bill = Number(billInput.value)
-    
   // get the tip from user & convert it into a percentage (divide by 100)
     let tipPercentage = Number(tipInput.value) / 100
   // get the total tip amount
     let tipAmount = bill * tipPercentage
   // calculate the total (tip amount + bill)
     let total = bill + tipAmount
-  // calculate the per person total (total divided by number of people)
+   // calculate the per person total (total divided by number of people)
     let perPersonTotal = total / numberOfPeople
   // update the perPersonTotal on DOM & show it to user
+    perPersonTotalDiv.innerText = `$${perPersonTotal}`
+
 }
 
 // ** Splits the bill between more people **
